@@ -2,20 +2,20 @@ const basePath = process.cwd();
 const { MODE } = require(`${basePath}/constants/blend_mode.js`);
 const { NETWORK } = require(`${basePath}/constants/network.js`);
 
-const network = NETWORK.eth;
+const network = NETWORK.sol;
 
 // General metadata for Ethereum
-const namePrefix = "Your Collection";
-const description = "Remember to replace this description";
+const namePrefix = "Innovation Nights Collection";
+const description = "Created by CBQA Solutions";
 const baseUri = "ipfs://NewUriToReplace";
 
 const solanaMetadata = {
-  symbol: "YC",
-  seller_fee_basis_points: 1000, // Define how much % you want from secondary market sales 1000 = 10%
-  external_url: "https://www.youtube.com/c/hashlipsnft",
+  symbol: "CBQA",
+  seller_fee_basis_points: 0, // Define how much % you want from secondary market sales 1000 = 10%
+  external_url: "https://cbqasolutions.com",
   creators: [
     {
-      address: "7fXNuer5sbZtaTEPhtJ5g5gNtuyRoKkvxdjEjEnPN4mC",
+      address: "63SzTB5d9qm7gywMA6f6ETATYgkaqPy6ZvV67ZhJLED4",
       share: 100,
     },
   ],
@@ -24,15 +24,137 @@ const solanaMetadata = {
 // If you have selected Solana then the collection starts from 0 automatically
 const layerConfigurations = [
   {
-    growEditionSizeTo: 5,
+    growEditionSizeTo: 1,
     layersOrder: [
-      { name: "Background" },
-      { name: "Eyeball" },
-      { name: "Eye color" },
-      { name: "Iris" },
-      { name: "Shine" },
-      { name: "Bottom lid" },
-      { name: "Top lid" },
+      {
+        name: "BackgroundGold",
+        options: {
+          displayName: "background",
+        },
+      },
+      {
+        name: "CloudGold",
+        options: {
+          displayName: "cloud",
+        },
+      },
+      {
+        name: "CBGold",
+        options: {
+          displayName: "cb",
+        },
+      },
+      {
+        name: "QAGold",
+        options: {
+          displayName: "qa",
+        },
+      },
+      {
+        name: "Gift",
+        options: {
+          displayName: "gift",
+        },
+      },
+    ],
+  },
+  {
+    growEditionSizeTo: 2,
+    layersOrder: [
+      {
+        name: "BackgroundSilver",
+        options: {
+          displayName: "background",
+        },
+      },
+      {
+        name: "CloudSilver",
+        options: {
+          displayName: "cloud",
+        },
+      },
+      {
+        name: "CBSilver",
+        options: {
+          displayName: "cb",
+        },
+      },
+      {
+        name: "QASilver",
+        options: {
+          displayName: "qa",
+        },
+      },
+      {
+        name: "Gift",
+        options: {
+          displayName: "gift",
+        },
+      },
+    ],
+  },
+  {
+    growEditionSizeTo: 10,
+    layersOrder: [
+      {
+        name: "Background",
+        options: {
+          displayName: "background",
+        },
+      },
+      {
+        name: "CloudSpecial",
+        options: {
+          displayName: "cloud",
+        },
+      },
+      {
+        name: "CBSpecial",
+        options: {
+          displayName: "cb",
+        },
+      },
+      {
+        name: "QASpecial",
+        options: {
+          displayName: "qa",
+        },
+      },
+      {
+        name: "Gift",
+        options: {
+          displayName: "gift",
+        },
+      },
+    ],
+  },
+  {
+    growEditionSizeTo: 100,
+    layersOrder: [
+      {
+        name: "Background",
+        options: {
+          displayName: "background",
+        },
+      },
+      {
+        name: "Cloud",
+        options: {
+          displayName: "cloud",
+        },
+      },
+      {
+        name: "CB",
+        options: {
+          displayName: "cb",
+        },
+      },
+      {
+        name: "QA",
+        options: {
+          displayName: "qa",
+        },
+      },
     ],
   },
 ];
@@ -42,8 +164,8 @@ const shuffleLayerConfigurations = false;
 const debugLogs = false;
 
 const format = {
-  width: 512,
-  height: 512,
+  width: 8269,
+  height: 6249,
   smoothing: false,
 };
 
@@ -68,7 +190,7 @@ const text = {
 };
 
 const pixelFormat = {
-  ratio: 2 / 128,
+  ratio: 1 / 128,
 };
 
 const background = {
@@ -78,7 +200,13 @@ const background = {
   default: "#000000",
 };
 
-const extraMetadata = {};
+const extraMetadata = {
+  collection: {
+    name: "Innovation Nights",
+    family: "CBQA Solutions Inc."
+  },
+  gift: false,
+};
 
 const rarityDelimiter = "#";
 
