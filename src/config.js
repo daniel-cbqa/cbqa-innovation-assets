@@ -5,7 +5,7 @@ const { NETWORK } = require(`${basePath}/constants/network.js`);
 const network = NETWORK.sol;
 
 // General metadata for Ethereum
-const namePrefix = "Innovation Nights Collection";
+const namePrefix = "Innovation Nights 1st Edition";
 const description = "Created by CBQA Solutions";
 const baseUri = "ipfs://NewUriToReplace";
 
@@ -23,76 +23,6 @@ const solanaMetadata = {
 
 // If you have selected Solana then the collection starts from 0 automatically
 const layerConfigurations = [
-  {
-    growEditionSizeTo: 1,
-    layersOrder: [
-      {
-        name: "BackgroundGold",
-        options: {
-          displayName: "background",
-        },
-      },
-      {
-        name: "CloudGold",
-        options: {
-          displayName: "cloud",
-        },
-      },
-      {
-        name: "CBGold",
-        options: {
-          displayName: "cb",
-        },
-      },
-      {
-        name: "QAGold",
-        options: {
-          displayName: "qa",
-        },
-      },
-      {
-        name: "Gift",
-        options: {
-          displayName: "gift",
-        },
-      },
-    ],
-  },
-  {
-    growEditionSizeTo: 2,
-    layersOrder: [
-      {
-        name: "BackgroundSilver",
-        options: {
-          displayName: "background",
-        },
-      },
-      {
-        name: "CloudSilver",
-        options: {
-          displayName: "cloud",
-        },
-      },
-      {
-        name: "CBSilver",
-        options: {
-          displayName: "cb",
-        },
-      },
-      {
-        name: "QASilver",
-        options: {
-          displayName: "qa",
-        },
-      },
-      {
-        name: "Gift",
-        options: {
-          displayName: "gift",
-        },
-      },
-    ],
-  },
   {
     growEditionSizeTo: 10,
     layersOrder: [
@@ -202,7 +132,7 @@ const background = {
 
 const extraMetadata = {
   collection: {
-    name: "Innovation Nights",
+    name: "Innovation Nights 1st Edition",
     family: "CBQA Solutions Inc."
   },
   gift: false,
