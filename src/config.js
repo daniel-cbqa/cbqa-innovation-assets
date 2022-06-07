@@ -5,8 +5,8 @@ const { NETWORK } = require(`${basePath}/constants/network.js`);
 const network = NETWORK.sol;
 
 // General metadata for Ethereum
-const namePrefix = "Innovation Nights 1st Edition";
-const description = "Created by CBQA Solutions";
+const namePrefix = "Innovation Nights";
+const description = "NFT Collection for the first edition of Innovation Nights. Created by CBQA Solutions";
 const baseUri = "ipfs://NewUriToReplace";
 
 const solanaMetadata = {
@@ -132,7 +132,7 @@ const background = {
 
 const extraMetadata = {
   collection: {
-    name: "Innovation Nights 1st Edition",
+    name: "Innovation Nights",
     family: "CBQA Solutions Inc."
   },
   gift: false,
